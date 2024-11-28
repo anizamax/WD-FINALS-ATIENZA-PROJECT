@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>BMW | About Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a class="nav-btn active" href="">About Us</a></li>
+                <li><a class="nav-btn" href="../Shop/index.html">Shop</a></li>
+                <li><a class="nav-btn" href="../Services/index.html">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img class="bmw" src="./assets/img/logo final.png" alt="">
+            <ul>
+                <li class="hideOnMobile"><a class="nav-btn" href="../../index.html">Home</a></li>
+                <li class="hideOnMobile"><a class="nav-btn active" href="">About Us</a></li>
+                <li class="hideOnMobile"><a class="nav-btn" href="../Shop/index.html">Shop</a></li>
+                <li class="hideOnMobile"><a class="nav-btn" href="../Services/index.html">Services</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </header>
+
+    <section-about>
+        <h1>About Us</h1>
+        <p>Based in Singapore, BMW Group Asia is the regional hub overseeing the East Asia region comprising 14 markets including: Bangladesh, Brunei, Cambodia, Guam, Indonesia, Laos, Myanmar, Nepal, New Caledonia, Philippines, Singapore, Sri Lanka, Tahiti and Vietnam.
+
+            Established in 1985, the office in Singapore is the regional base for key corporate functions like corporate audit, corporate sales, direct sales and special vehicles, government affairs and corporate affairs. The regional office is also home to the BMW Group IT Service Managements, BMW Asia Treasury Centre and BMW Group Financial Services, as well as the Asia-Pacific regional office for BMW Motorrad, MINI and Rolls-Royce Motor Cars. Other function includes market responsibility and the management of BMW Group subsidiaries in Singapore and Indonesia, as well as the supervision of all importers across East Asia.</p>
+    </section-about>
+
+    <section-contact id="contact">
+        <div class="text">
+            <p>CONTACT US:</p>
+        </div>
+
+        <div class="img">
+            <a href="https://www.bmw.com.ph/site/enquiry/">
+                <img class="img" src="./assets/img/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/bmwphilippines">
+                <img class="img" src="./assets/img/ig final.png" alt="">
+            </a>
+            <a href="https://www.facebook.com/bmwphilippines">
+                <img class="img" src="./assets/img/facebook-logo-white-11549845815wclpvkfdsb-removebg-preview.png" alt="">
+            </a>
+        </div>
+    </section-contact>
+
+</body>
+</html>

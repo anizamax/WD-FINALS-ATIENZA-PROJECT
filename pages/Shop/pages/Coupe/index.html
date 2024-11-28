@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>BMW | X6 Coupe SUV</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="../../../../index.html">Home</a></li>
+                <li><a class="nav-btn" href="../../../AboutUs/index.html">About Us</a></li>
+                <li><a class="nav-btn active" href="../../index.html">Shop</a></li>
+                <li><a class="nav-btn" href="../../../Services/index.html">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img class="bmw" src="./assets/img/logo final.png" alt="">
+            <ul>
+                <li class="hideOnMobile"><a class="nav-btn" href="../../../../index.html">Home</a></li>
+                <li class="hideOnMobile"><a class="nav-btn" href="../../../AboutUs/index.html">About Us</a></li>
+                <li class="hideOnMobile"><a class="nav-btn active" href="../../index.html">Shop</a></li>
+                <li class="hideOnMobile"><a class="nav-btn" href="../../../Services/index.html">Services</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </header>
+
+    <section-body>
+
+        <li><a href="../../index.html"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></a></li>
+
+    <div>
+        <img class="img-car" src="./assets/img/X6_Coupe_SUV-removebg-preview.png" alt="">
+    </div>
+
+    <div class="text-body">
+        <h1>X6 Coupe SUV</h1>
+
+        <h2>EVERY DRIVE - TRANSFORMED</h2>
+        <p>Starting at just $74,500, the BMW X6 Coupe SUV is a transformative desing. It has very convinient features and connected technology. It was designed to fit perfectly into your life. 
+        </p>
+
+        <h2>STEAL THE SPOTLIGHT</h2>
+        <p>The boldness of the 2025 BMW X6 is unmistakable. From the coupe-like roofline to the chiseled profile, this luxury crossover sends a message of power and prestige. Great power lives in the wide stance, horizontal contours, and impressive air intakes and exhaust finishers. The newly standard LED Headlights with Cornering Lights provide optimal illumination for the road ahead.</p>
+
+        <h2>PURE POTENTIAL</h2>
+        <p>The X6 Coupe SUV puts you in a position of power with BMW TwinPower Turbo engines. In the X6 xDrive40i, an inline 6-cylinder is enhanced with the latest 48V mild-hybrid technology and optional M Sport Exhaust System. In the M60i, a V-8 engine includes the latest 48V mild-hybrid technology and standard M Sport Exhaust System. Plus, every X6 boasts a standard 8-speed Sport Automatic Transmission for precise shifting.</p>
+    </div>
+    </section-body>
+
+    <section-contact id="contact">
+        <div class="text">
+            <p>CONTACT US:</p>
+        </div>
+        
+        <div class="img">
+            <a href="https://www.bmw.com.ph/site/enquiry/">
+                <img class="img" src="./assets/img/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/bmwphilippines">
+                <img class="img" src="./assets/img/ig final.png" alt="">
+            </a>
+            <a href="https://www.facebook.com/bmwphilippines">
+                <img class="img" src="./assets/img/facebook-logo-white-11549845815wclpvkfdsb-removebg-preview.png" alt="">
+            </a>
+        </div>
+    </section-contact>
+
+</body>
+</html>

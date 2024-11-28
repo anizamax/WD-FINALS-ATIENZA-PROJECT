@@ -1,0 +1,104 @@
+/* Global Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  font-size: smaller;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: 5rem;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    text-shadow: 10cm;
+  }
+}
+
+.main .btn-sec {
+  background-color: rgb(108, 130, 228);
+  padding: 0.7rem 1.7rem;
+  border-radius: 1rem;
+  z-index: 1;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main .bmw {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .main .btn-sec {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo img {
+    height: 2rem;
+  }
+
+  .header nav {
+    gap: 0.25rem;
+  }
+
+  .main {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .main .bmw {
+    object-fit: cover; /* Ensures the video still covers smaller screens */
+  }
+
+  .main .btn-sec {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
