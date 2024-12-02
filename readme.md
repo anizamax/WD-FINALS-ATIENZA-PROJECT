@@ -63,9 +63,13 @@ Description of the project in details.
 
 Guiding Question:
 - What is the project
+  This project is about creating a website that is mobile responsive.
 - Whats the purpose
+  To make the website look good in mobile not just in desktop dimensions.
 - What are key components
+  The key component for this project is media queries, a css code which makes my website media responsive
 - What technology used and how it is used
+  CSS, HTML, JavaScript was used for this project. Html is for content structure, CSS is for styling and responsiveness for mobile devices, and Javascript is for sidebar toggling and interactive behavior.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
