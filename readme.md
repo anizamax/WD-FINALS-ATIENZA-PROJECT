@@ -73,6 +73,7 @@ Guiding Question:
 - MultiPage Website/Single Page Website
 - Parallax transition
 - Transactional
+- Mobile Responsive
 
 ### Technology
 <!-- TODO: List of Technology Used -->
